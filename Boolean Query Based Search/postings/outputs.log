@@ -1,0 +1,30 @@
+FUNCTION: getTopK 10
+Result: said, mln, dlr, from, it, vs, pct, ct, ha, year
+FUNCTION: getPostings Iwould
+Ordered by doc IDs: 11004
+Ordered by TF: 11004
+FUNCTION: getPostings Yeutter
+Ordered by doc IDs: 9657, 9944, 10898, 10917, 10963, 11004, 11855, 12501, 12526, 12568, 12618
+Ordered by TF: 12501, 10963, 11004, 11855, 9657, 9944, 10898, 10917, 12526, 12568, 12618
+FUNCTION: TermAtATimeQueryAnd Iwould Yeutter
+1 documents are found
+11 comparisons are made
+0.011646704 seconds are used
+11 comparisons are made with optimization
+Result: 11004
+FUNCTION: TermAtATimeQueryOr Iwould Yeutter
+11 documents are found
+56 comparisons are made
+0.009210364 seconds are used
+56 comparisons are made with optimization
+Result: 9657, 9944, 10898, 10917, 10963, 11004, 11855, 12501, 12526, 12568, 12618
+FUNCTION: docAtATimeQueryAnd Iwould Yeutter
+1 documents are found
+6 comparisons are made
+0.014620603 seconds are used
+Result: 11004
+FUNCTION: docAtATimeQueryOr Iwould Yeutter
+11 documents are found
+6 comparisons are made
+0.011081346 seconds are used
+Result: 9657, 9944, 10898, 10917, 10963, 11004, 11855, 12501, 12526, 12568, 12618
